@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.89.4 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="LY">
+<meta name="keywords" content="Handbrake, Tutorials">
+<meta name="description" content="You may have seen x265 releases in the net and be suprised with the quality and size of those movies/tv-shows compared to the old x264. You might be wondering - How do i encode all those Blu-rays i got into x265 for storage?
+That&rsquo;s when Handbrake comes in handy! You can easily encode any movies into x265 or even other formats (i.e mp4, mkv, mov and etc).">
+
+
+<meta property="og:description" content="You may have seen x265 releases in the net and be suprised with the quality and size of those movies/tv-shows compared to the old x264. You might be wondering - How do i encode all those Blu-rays i got into x265 for storage?
+That&rsquo;s when Handbrake comes in handy! You can easily encode any movies into x265 or even other formats (i.e mp4, mkv, mov and etc).">
+<meta property="og:type" content="article">
+<meta property="og:title" content="10/12-bit x265 encoding with Handbrake">
+<meta name="twitter:title" content="10/12-bit x265 encoding with Handbrake">
+<meta property="og:url" content="https://ceoyap.github.io/2018/07/10/12-bit-x265-encoding-with-handbrake/">
+<meta property="twitter:url" content="https://ceoyap.github.io/2018/07/10/12-bit-x265-encoding-with-handbrake/">
+<meta property="og:site_name" content="LY - A Hobbyist | Medical Student">
+<meta property="og:description" content="You may have seen x265 releases in the net and be suprised with the quality and size of those movies/tv-shows compared to the old x264. You might be wondering - How do i encode all those Blu-rays i got into x265 for storage?
+That&rsquo;s when Handbrake comes in handy! You can easily encode any movies into x265 or even other formats (i.e mp4, mkv, mov and etc).">
+<meta name="twitter:description" content="You may have seen x265 releases in the net and be suprised with the quality and size of those movies/tv-shows compared to the old x264. You might be wondering - How do i encode all those Blu-rays i got into x265 for storage?
+That&rsquo;s when Handbrake comes in handy! You can easily encode any movies into x265 or even other formats (i.e mp4, mkv, mov and etc).">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2018-07-01T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2018-07-01T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Tutorials">
+    
+  
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@anaethesio">
+
+
+  <meta name="twitter:creator" content="@anaethesio">
+
+
+
+
+
+
+
+  <meta property="og:image" content="//i.imgur.com/d9Z9BPQ.png">
+  <meta property="twitter:image" content="//i.imgur.com/d9Z9BPQ.png">
+
+
+
+
+  <meta property="og:image" content="https://i.imgur.com/ZEaGPOw.png">
+  <meta property="twitter:image" content="https://i.imgur.com/ZEaGPOw.png">
+
+
+    <title>10/12-bit x265 encoding with Handbrake</title>
+
+    <link rel="icon" href="https://i.imgur.com/ZEaGPOw.png">
+    
+
+    <link rel="canonical" href="https://ceoyap.github.io/2018/07/10/12-bit-x265-encoding-with-handbrake/">
+
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6488034733674382",
+            enable_page_level_ads: true
+        });
+    </script>
+    
+    
+    <script src="https://kit.fontawesome.com/847796ba1d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://ceoyap.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-105101701-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="2">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://ceoyap.github.io/">LY - A Hobbyist | Medical Student</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://ceoyap.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://i.imgur.com/ZEaGPOw.png" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="2">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://ceoyap.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://i.imgur.com/ZEaGPOw.png" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">LY</h4>
+        
+          <h5 class="sidebar-profile-bio"><a href="https://ceoyap.github.io/page/about/">A medical student with an endless curiosity</a></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://ceoyap.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://ceoyap.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://ceoyap.github.io/page/about/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-portrait"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://ceoyap.github.io/categories/ubd-medicine/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stethoscope"></i>
+      
+      <span class="sidebar-button-desc">UBD Medicine</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              "
+       style="background-image:url('//i.imgur.com/d9Z9BPQ.png')"
+       data-behavior="2">
+    
+      <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title" itemprop="headline">
+      10/12-bit x265 encoding with Handbrake
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-07-01T00:00:00Z">
+        
+  July 1, 2018
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://ceoyap.github.io/categories/tutorials">Tutorials</a>
+    
+  
+ |
+    2  minutes 
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="2"
+        class="hasCover
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>You may have seen x265 releases in the net and be suprised with the quality and size of those movies/tv-shows compared to the old x264. You might be wondering - How do i encode all those Blu-rays i got into x265 for storage?</p>
+<p>That&rsquo;s when Handbrake comes in handy! You can easily encode any movies into x265 or even other formats (i.e mp4, mkv, mov and etc).</p>
+<p>As of today, the latest version of Handbrake (v1.1.1) has finally included x265 encode presets and also included support for 10/ 12-bits. Therefore, you can just select those presets and &ldquo;BOOM!&rdquo;. You are set to go. For more details on x265 and 10/ 12-bit, read on.</p>
+<hr>
+<h2 id="why-x265-and-not-x264">Why x265, and not x264?</h2>
+<ul>
+<li>Smaller size, while preserving quality (i.e 4K, UHD videos)</li>
+</ul>
+<h5 id="the-downsides">The Downsides</h5>
+<p>x264 (H.264) can be seen in almost all releases and there are ton of devices that can encode/decode x264 files very fast and efficiently. x265 (H.265) is relatively a new technology and not many devices support it. Additionally, you will need much more computing power to decode x265 files because most of the processing are done by CPU and not video hardware (Bye! Raspberry Pi).</p>
+<p>Thanks to Matt Gadient! He made an <a href="https://mattgadient.com/x264-vs-x265-vs-vp8-vs-vp9-examples/">Encoder Comparison</a> between x264, x265, VP8 and VP9. Be sure to check it out!</p>
+<hr>
+<h2 id="when-to-use-10-bit-or-12-bit-or-not">When to use 10-bit or 12-bit or not?</h2>
+<ul>
+<li>Smaller size with 10-bit</li>
+</ul>
+<p>The same problem comes when using 10 or 12-bits videos, there are not many devices that play those videos. Even if those devices &ldquo;try&rdquo; to play those videos, it will end up being very super-saturated. Furthermore, it takes so much RAM to encode those videos.</p>
+<p>Matt Gadient also made <a href="https://mattgadient.com/results-encoding-8-bit-video-at-81012-bit-in-handbrake-x264x265/">BITs comparison page</a> between 8, 10 and 12 bit encodes</p>
+<hr>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li><a href="https://handbrake.fr/">Handbrake</a></li>
+<li>Good PC</li>
+</ul>
+<p>Compared to x264, encoding x265 files requires a lot of processing power to encode which will provide you with a smaller file with amazing quality. High-end CPU and RAM are recommended to decrease time taken to encode each videos. Your PC&rsquo;s fans will blast like a wind turbine, so prepare to make sure the room is properly cooled.</p>
+<hr>
+<h2 id="settings">Settings</h2>
+<p>Follow the settings in the picture and you click &ldquo;Start Encode&rdquo; when you are done!</p>
+<h4 id="summary-tab">Summary tab:</h4>
+<p><img src="https://i.imgur.com/BoWEI3n.png" alt="Step 1" title="Default tab"></p>
+<h4 id="video-tab">Video tab:</h4>
+<p><img src="https://i.imgur.com/l50sAfJ.png" alt="Step 2" title="Video tab"></p>
+<hr>
+<h1 id="whew">Whew!</h1>
+<p>Overall, the only benefit with x265 is smaller size. With the price of storage devices getting lower, i would recommend you guys to just stick with x264 when trying to encode and stick with x265 releases as to save internet bandwidth.</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://ceoyap.github.io/2019/01/wip4-board-design-done/" data-tooltip="WIP4: Board design done!">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://ceoyap.github.io/2017/08/part-5-a-complete-eq-tutorial-dnbscene.com/" data-tooltip="Part 5: A Complete EQ Tutorial (DnBscene.com)">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 LY. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="2">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://ceoyap.github.io/2019/01/wip4-board-design-done/" data-tooltip="WIP4: Board design done!">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://ceoyap.github.io/2017/08/part-5-a-complete-eq-tutorial-dnbscene.com/" data-tooltip="Part 5: A Complete EQ Tutorial (DnBscene.com)">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="2">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://i.imgur.com/ZEaGPOw.png" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">LY</h4>
+    
+      <div id="about-card-bio"><a href="https://ceoyap.github.io/page/about/">A medical student with an endless curiosity</a></div>
+    
+    
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    <div id="cover" style="background-image:url('https://i.imgur.com/ZrdROqS.jpg');"></div>
+  
+
+
+    
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+<script src="https://ceoyap.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/ceoyap.github.io\/2018\/07\/10\/12-bit-x265-encoding-with-handbrake\/';
+          
+            this.page.identifier = '\/2018\/07\/10\/12-bit-x265-encoding-with-handbrake\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'ceoyap';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

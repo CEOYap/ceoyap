@@ -1,0 +1,131 @@
+---
+title: "Wangan Midnight Maximum Tune 5 on PC with TeknoParrot"
+date: 2019-03-09
+categories:
+- Tutorials
+keywords:
+- tutorials
+- emulation
+autoThumbnailImage: true
+thumbnailImagePosition: "left"
+coverImage: //i.imgur.com/gdPGvzU.png
+metaAlignment: center
+---
+This truly is an exciting news! You can actually play modern arcade titles on PC with TeknoParrot. In this article, i am going to show how to use TeknoParrot to play one of my favourite arcade titles, Wangan Midnight Maximum Tune 5.
+<!--more-->
+
+---
+# What is TeknoParrot?
+
+[TeknoParrot](https://teknoparrot.com/) developed by Teknogods (Well-renowned with their Call Of Duty emulators), allows you to run "selected" modern arcade titles on your own PC. Additionally, it has full support for keyboard and mouse, gamepads, steering wheels and joysticks.
+
+While TeknoParrot is a closed-source project, they also released 2 opensource project called "[OpenParrot](https://github.com/teknogods/OpenParrot)" and "[TeknoParrotUI](https://github.com/teknogods/TeknoParrotUI)", open-source version of TeknoParrot and GUI for both project, respectively.
+
+{{< adsense-inarticle >}}
+
+You can also support Teknogods through [Patreon](https://www.patreon.com/) and it allows you to get the latest version of TeknoParrot 2 earlier than public release.
+
+[Official Website](https://teknoparrot.com/)
+
+[Official Forum](https://forum.teknogods.com/viewforum.php?f=83)
+
+[Wiki](https://wiki.teknoparrot.com/)
+
+---
+# How to use TeknoParrot to play WMMT5?
+### Requirements:
+* Latest [TeknoParrot](https://teknoparrot.com/)
+* [7zip](https://www.7-zip.org/) or similar
+* [Wangan Midnight Maximum Tune 5 Update 5 Eng patched Dump](https://drive.google.com/open?id=19t-GgVOeyHH-miTaoIcBWdpa-Dl5_ADs)
+* [WMMT5 Resolution Patch](https://github.com/Nezarn/WMMT5ResPatcher/releases/)
+* Gamepad or Steering Wheel (If you use DualShock controllers, you need [Xpadder](https://xpadder.com/?lang=english&country=GB))
+
+### Extras:
+* [WMMT5 Update 5 Jp Clean Dump](https://drive.google.com/file/d/1Ns9bUKdgb-KrUqTs49mVZGqJhXvaVs54/view)
+* [WMMT5 Save Editor](https://drive.google.com/open?id=1tCpyEkfojr4nttWxhHZTTbeMcF30dv5S) ([MEGA mirror](https://mega.nz/#!z2oCUAab!tS7hZcgGFVAv9gXZl3yfYg4LlRvEQRQTyU-pBH3DVdE))
+
+To begin with, download all the required files under "Requirements". You can also choose to download either the English patched dump or the clean japanese dump. However, i would recommend you download the English patched dump. The english translation are based on the international version of WMMT5.
+
+### Step 1:
+Extract TeknoParrot and your downloaded WMMT5 dump to your preferrable location.
+{{< image classes="fancybox" src="https://i.imgur.com/h5SYsup.png" thumbnail="https://i.imgur.com/h5SYsup.png" >}}
+
+### Step 2:
+Extract WMMT 5 Resolution Patch into your WMMT5 dump and run "WMMT 5 Resolution Patcher.exe". 
+{{< image classes="fancybox" src="https://i.imgur.com/o1L6116.png" thumbnail="https://i.imgur.com/o1L6116.png" >}}
+
+### Step 3:
+Browse into your WMMT5 dump and select "wmn5r.exe". A window will popup which allows you to select your screen resolution. Once done, click apply.
+{{< image classes="fancybox" src="https://i.imgur.com/p5cWsAP.png" thumbnail="https://i.imgur.com/p5cWsAP.png" >}}
+
+### Step 4:
+Open your TeknoParrot folder and run "TeknoParrotUi.exe"
+{{< image classes="fancybox" src="https://i.imgur.com/WLQjBQV.png" thumbnail="https://i.imgur.com/WLQjBQV.png" >}}
+
+### Step 5:
+Under "Game Launcher", go to the bottomest list and select "Wangan Midnight Maximum Tune 5".
+{{< image classes="fancybox" src="https://i.imgur.com/fM0wocw.png" thumbnail="https://i.imgur.com/fM0wocw.png" >}}
+
+### Step 6:
+Next, click on "Emulation Settings" and i would recommend you to tick "Load last game played on launch". Additionally, click on "Enable sTo0z Zone" and put it to 10%. This is to prevent the game from steering to the left. If this doesn't happen, you can disable this. Under "Joystick Interface", select "XInput", which allows use of Xbox 360 or One controller. Finally, click "Save Settings".
+{{< image classes="fancybox" src="https://i.imgur.com/zShYuEH.png" thumbnail="https://i.imgur.com/zShYuEH.png" >}}
+
+### Step 7:
+After that, click on "Game Settings" and then click on "Game location". Browse to your WMMT5 dump and select "wmn5r.exe". From here, you can also setup your name under "General - CustomName". Don't forget to click "save settings".
+{{< image classes="fancybox" src="https://i.imgur.com/ehtq1vw.png" thumbnail="https://i.imgur.com/ehtq1vw.png" >}}
+
+### Step 8:
+Click on "Input Mapping", just next to "Game specific settings" to setup your bindings. Below is my current binding for WMMT5. Don't forget to click "save settings".
+{{< image classes="fancybox" src="https://i.imgur.com/m4PwfkR.png" thumbnail="https://i.imgur.com/m4PwfkR.png" title="I would recommend you to use 'A' for gear down instead of up." >}}
+
+### Step 9:
+Finally, you can start the game!
+{{< image classes="fancybox" src="https://i.imgur.com/EMZvuOr.png" thumbnail="https://i.imgur.com/EMZvuOr.png" title="Mainmenu Eng translated!" >}}
+{{< image classes="fancybox" src="https://i.imgur.com/KU53L0b.png" thumbnail="https://i.imgur.com/KU53L0b.png" title="Even the stories are translated" >}}
+
+---
+# Extras:
+### 1. How to use WMMT5 Save Editor?
+1. Extract the contents of "WMMT5 Save Editor" to your preferrable location.
+2. Launch "Wangan Terminal Local Server.exe" and "Wmmt5 terminal.exe"
+{{< image classes="fancybox" src="https://i.imgur.com/rtj91Vh.png" thumbnail="https://i.imgur.com/rtj91Vh.png" >}}
+3. Click on the black screen of Wangan Terminal.
+{{< image classes="fancybox" src="https://i.imgur.com/b1oDo1J.png" thumbnail="https://i.imgur.com/b1oDo1J.png" >}}
+4. Click on "Settings" and setup your "Terminal Local Server IP" and "WMMT5 Directory".
+{{< image classes="fancybox" src="https://i.imgur.com/byQ5aUy.png" thumbnail="https://i.imgur.com/byQ5aUy.png" >}}
+5. Once done, you can head off to "My Garage" and modify your cars.
+{{< image classes="fancybox" src="https://i.imgur.com/vMHFFje.png" thumbnail="https://i.imgur.com/vMHFFje.png" >}}
+{{< image classes="fancybox" src="https://i.imgur.com/PApsFrD.png" thumbnail="https://i.imgur.com/PApsFrD.png" >}}
+
+[Dress-up Parts](https://soarsmedia.blogspot.com)
+
+### 2. How to play WMMT5 Multiplayer?
+I HAVE NO ONE TO TRY WITH. DIS IS SO SAD.
+
+---
+# WMMT5 Frequently asked questions (FAQs)
+
+### 1. How do i save my car if there is no Banapassport?
+At the end of a race, there will be a selection to either continue the game or not. Selecting "No" will save your car progress. 
+
+Cars are saved inside your WMMT5 dump directory at "OpenParrot_Cars". To simplify your life, use "Wangan Terminal Save Editor" to edit dress-up.
+
+### 2. Why does the story start from the last progress?
+Despite using other cars, the game progression will always be the last completed mission. This is due to the Story mode being saved in a single file, located inside WMMT5 dump directory as "openprogress.sav".
+
+To restart Story mode, delete "openprogress.sav".
+
+### 3. Where is Ghost mode?
+Currently, there is no Ghost mode. However, progress has been made to enable Ghost mode. For further progress, do check out [WMMT5 Online Ghost Project](http://derole.co.uk/wmmt5ghostbattle/).
+
+---
+# Credits
+I give my sincere thanks to:
+
+* [Teknogods](https://teknogods.com) for developing TeknoParrot
+
+* [tattohanz](http://www.emuline.org/profile/6436-tattoohanz/) for English Patch
+
+* [Derole123](https://wanganterminalproject.wordpress.com/) for Wangan Terminal Project
+
+{{< adsense-inarticle >}}

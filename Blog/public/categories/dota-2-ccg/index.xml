@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dota 2 CCG on LY - A Hobbyist | Medical Student</title>
+    <link>https://ceoyap.github.io/categories/dota-2-ccg/</link>
+    <description>Recent content in Dota 2 CCG on LY - A Hobbyist | Medical Student</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ceoyap.github.io/categories/dota-2-ccg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WIP5: Mainmenu &amp; Stuff!</title>
+      <link>https://ceoyap.github.io/2019/03/wip5-mainmenu-stuff/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ceoyap.github.io/2019/03/wip5-mainmenu-stuff/</guid>
+      <description>&lt;p&gt;A month has passed and a new development update for DoKad 2!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WIP4: Board design done!</title>
+      <link>https://ceoyap.github.io/2019/01/wip4-board-design-done/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ceoyap.github.io/2019/01/wip4-board-design-done/</guid>
+      <description>&lt;p&gt;I am pretty sure you guys are excited with these latest update on the game. I finally completed the map! Wooohooo!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WIP3: All heroes added and new card design!</title>
+      <link>https://ceoyap.github.io/2017/06/wip3-all-heroes-added-and-new-card-design/</link>
+      <pubDate>Tue, 06 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ceoyap.github.io/2017/06/wip3-all-heroes-added-and-new-card-design/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve finally graduated from university! Time to use my spare time developing this game. Onwards to the new update, i&amp;rsquo;ve finally added all the heroes from DOTA 2 with all the required stats. It&amp;rsquo;s now in a playable state but it still require some serious work on the stats.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WIP2: Slow development progress</title>
+      <link>https://ceoyap.github.io/2017/04/wip2-slow-development-progress/</link>
+      <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ceoyap.github.io/2017/04/wip2-slow-development-progress/</guid>
+      <description>&lt;p&gt;I am writing this to late you guys know that i am still working on the game but lately the progress has been really slow as i have exam starting 1st May.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WIP1: Dota 2 Collectible Card Game</title>
+      <link>https://ceoyap.github.io/2017/03/wip1-dota-2-collectible-card-game/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ceoyap.github.io/2017/03/wip1-dota-2-collectible-card-game/</guid>
+      <description>&lt;p&gt;A simple free CCG using Unreal Engine that has the same ruleset as Hearthstone so that the game will be easy for newbies to pickup.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

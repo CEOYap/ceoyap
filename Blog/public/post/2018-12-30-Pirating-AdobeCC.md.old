@@ -1,0 +1,273 @@
+---
+title: "WIP3: All heroes added and new card design!"
+date: 2018-12-30
+categories:
+- Tutorials
+keywords:
+- dota 2
+autoThumbnailImage: true
+thumbnailImagePosition: "left"
+coverImage: //i.imgur.com/yNZXfZ9.png
+metaAlignment: center
+---
+I've finally graduated from university! Time to use my spare time developing this game. Onwards to the new update, i've finally added all the heroes from DOTA 2 with all the required stats. It's now in a playable state but it still require some serious work on the stats.
+<!--more-->
+Beside that, i've made a new design to the card and created a website specifically for "[DOTA2-CCG](https://ceoyap.github.io/D2CCG.htm)", which can also be accessed from the sidebar menu.
+
+With the recent release of Unreal Engine 4.16, the game has been fully updated to the latest game engine and thankfully, nothing broke. A minor update to the game is that the game are now based on Radiant vs Dire but there are no restriction on the heroes selection. Beside that, the ruleset of the game may change as to make it unique to the DOTA UNIVERSE.
+
+---
+# Prerequisites:
+
+- **[Visual Studio 2017 C++ Redistributable](https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads)**
+
+	- Download the files `vc_redist.x86.exe` and ` vc_redist.x64.exe` from the link above.
+
+	- Open the file `vc_redist.x86.exe`.
+
+	- Tick the ***I agree to the license terms and conditions*** box.
+
+	- Click ***Install***.
+
+	- Once complete, open the file `vc_redist.x64.exe` and repeat the above two steps.
+
+	- **Restart your PC**.
+
+***
+
+# **Setup:**
+
+1. Download the file `CCMaker.exe` from a link of your choice **[here](https://old.reddit.com/r/MSToolkit/comments/89zowg/ccmaker_v136_download/)** (currently only OneDrive and Box works)
+
+2. Open the file `CCMaker.exe`
+
+3. Click on ***Download and install***
+
+4. Wait for the tool to initialise.
+
+5. Refer to the image links in the ***CCMaker Entry*** column, or the versions in the ***Version*** column **[here](https://old.reddit.com/r/sjain_guides/wiki/piracyinfo#wiki_adobe_cc_2018_information_.28windows.29)** to select the applications you would like to install. If you have a **32-bit** system, select the ***win32*** entries instead, if available. **It is crucial you select the correct versions**.
+
+6. Click on the ***Browse*** button next to the empty box titled ***Specify the folder to store the distribution files***.
+
+7. Create a folder somewhere (preferably on the same drive where you will install the applications), **select it**, then click ***OK***.
+
+8. Click ***Next***.
+
+9. If you see the option ***CCX Process*** anywhere, **untick it**.
+
+10. Click on the ***Language Resources*** tab.
+
+11. **Tick** the languages you want to use or may use later.
+
+11. Click on the ***Application Language*** dropdown.
+
+12. Select the default language you would like the application to be in.
+
+13. Here, you can optionally change the installation location of the application by clicking on the ***Browse*** button next to the ***Install to:*** box. Create a folder, **select it**, then click ***OK***.
+
+14. **If you are installing multiple applications**, click on the **topmost dropdown** of the window, and select another application.
+
+15. Repeat **Steps 9-12** and optionally repeat **Step 13**.
+
+16. If you are installing **more than two applications**, repeat **Step 15** until you have gone through **all** of the applications in the dropdown.
+
+17. Click ***Next***.
+
+18. Ensure the ***Install AMTEmu*** and ***Do not redownload...*** boxes are **ticked**. They should be automatically ticked.
+
+19. Click ***Next***.
+
+20. Review the options to ensure they are set to your preference. Then, click ***Install***.
+
+***
+
+# **Removing DRM - Hosts**:
+
+**Skip this section if you wish to use the Creative Cloud app or a legitimate subscription**
+
+1.  Open the start menu and search for ***Notepad***.
+
+13. Right click on it and click ***Run as administrator***.
+
+14. Click on ***File***, then ***Open***. 
+
+15. Change the **[file type dropdown](https://i.imgur.com/eQWN93k.png)** (bottom right) to ***All Files***.
+
+16. Click on the **[path bar](https://i.imgur.com/5HGpFDG.png)** once and delete everything.
+
+17. Enter `C:\Windows\system32\drivers\etc` and press **Enter** on your keyboard.
+
+17. Double click on the file named ***hosts***.
+
+21. Click on the **rightmost end of the last line** of the document, then press **Enter** on your keyboard 3-4 times.
+
+22. Paste in everything from **[here](https://pastebin.com/raw/Mpm5Jd6m)**.
+
+18. Click on ***File***, then ***Save***, then **close the window**.
+
+***
+
+# **Removing DRM - Optional precautions**:
+
+- **Only continue if you have run any Adobe installer in the past, or have the Adobe Creative Cloud app installed.**
+
+- **Some or all of the items below might not be present (which is fine)**
+
+- **If you installed the apps via the Setup: method above, and have never run any official Adobe installer, none of the below tasks are necessary as the items will not be installed by CCMaker.**
+
+- **It is, however, strongly recommended to go through Services.**
+
+#### **Services**:
+
+19. Hold down the **Windows key** on your keyboard, and tap **R**. 
+
+20. Enter `services.msc` into the box that pops up, then press **Enter**.
+
+21. Right click on the option named ***Adobe Genuine Software Integrity Service***.
+
+22. Click ***Properties***.
+
+12. Click ***Stop***.
+
+13. Change the ***Startup type*** dropdown menu to ***Disabled***. Press ***OK*** and then close the window. **[Example result](https://i.imgur.com/A8sI5De.png)**
+
+13. Repeat **Steps 3-6** for the following services named ***Adobe Genuine Monitor Service*** and ***AdobeUpdateService***
+
+13. Close the window.
+
+14. Open a new File Explorer window.
+
+15. Navigate to `C:\Program Files (x86)\Common Files\Adobe`
+
+16. Hold down **Shift** on your keyboard, right click on the ***AdobeGCClient*** folder, click ***Delete***, then release the **Shift** key. If prompted by UAC, click ***Yes***.
+
+17. Close the window.
+
+###### ***If you have the Adobe Creative Cloud App installed (skip if combining with a legitimate subscription):***
+
+1. Download the **[Adobe Creative Cloud Cleaner Tool](https://helpx.adobe.com/uk/creative-cloud/kb/cc-cleaner-tool-installation-problems.html)**.
+
+2. Open the file `AdobeCreativeCloudCleanerTool.exe`.
+
+3. Press **e** then **Enter** on your keyboard
+
+4. Press **y** then **Enter** on your keyboard
+
+5. Press the number key on your keyboard corresponding to the "Creative Cloud only" option. e.g. Press **6** on your keyboard for ***6. Creative Cloud only***. **[Example](https://i.imgur.com/pIYzzTl.png)**
+
+6. Press **Enter** on your keyboard
+
+7. Press **1** then **Enter** on your keyboard
+
+8. Press **y** then **Enter** on your keyboard
+
+9. **Wait for the process to finish**, then **close the window**.
+
+#### **Optional in-depth cleanup**:
+
+- **Note: COMPLETELY OPTIONAL! You can skip this *whole section* and it will *never* affect the activation of any Adobe application or cause it to detect piracy.**
+
+- **All of the below items are rendered *completely useless* if the services are disabled as described above.**
+
+13. Open the Start Menu and search for ***Task Scheduler***. Open the first result.
+
+13. Click on ***Task Scheduler Library*** (on the left).
+
+13. For every entry with ***AdobeGCInvoker***, ***AdobeAAMUpdater*** and ***Adobe Acrobat Update Task*** in their names (note that not all may be present - that's OK), right click on these entries, and click ***Disable***.
+
+13. Repeat **Step 3**, but click ***Delete*** instead after right-clicking.
+
+13. Close the window.
+
+1. Hold down the **Windows key** on your keyboard, and tap **R**. 
+
+2. Enter `regedit` into the box that pops up, then press **Enter**.
+
+3. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run` *(**on Windows 10 1703 or higher, you can simply copy and paste this into the address bar at the top**)*.
+
+4. For every entry with ***Adobe*** in its name, right click on the entry, and click ***Delete***.
+
+5. Repeat **Steps 8-9** for the following locations, then close the window:
+
+- `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce`
+
+- `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Run`
+
+- `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\RunOnce`
+
+- `Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run`
+
+- `Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce`
+
+###### *If you are on Windows 10:*
+
+13. Open Task Manager (hold down the **CTRL** and **SHIFT** keys on your keyboard, and tap **ESC**).
+
+13. Click ***Startup***.
+
+13. Right click on ***Adobe GC Invoker Utility***.
+
+13. Click ***Disable***.
+
+13. Repeat **Steps 3-4** for ***Adobe Updater Startup Utility***
+
+13. Close the window.
+
+###### *If you are on Windows 7 - 8.1:*
+
+1. Hold down the **Windows key** on your keyboard, and tap **R**. 
+
+2. Enter `msconfig` into the box that pops up, then press **Enter**.
+
+3. Click on the ***Startup*** tab.
+
+4. **Untick** the options ***Adobe Updater Startup Utility*** and ***Adobe GC Invoker Utility***
+
+***
+
+## **FAQ**:
+
+#### ***When I shut down my PC, I keep seeing the error message "LogTransport2.exe - The application was unable to start correctly"***
+
+1. Hold down the **Windows key** on your keyboard, and tap **R**. 
+
+2. Enter `regedit`.
+
+3. Go to `HKEY_CURRENT_USER\SOFTWARE\Adobe\CommonFiles\UsageCC\<user GUID>` (if you can't find your user GUID, just look in all the folders there)
+
+4. On the right hand side, **if you do not already see a key called `optin`**, right click on a blank space there, click on ***New >*** then click on ***DWORD (32-bit) Value***.
+
+5. Enter `optin`
+
+6. Right click on the entry **(Start from this step if you already see the `optin` entry)**
+
+7. Click ***Modify...***
+
+8. Replace any value there with `0`.
+
+9. Click ***OK***.
+
+10. The error should no longer appear on next shutdown / restart. You do not need to restart your PC immediately.
+
+- **[Source](https://forums.adobe.com/thread/1492979)**
+
+#### ***Can I combine this with a legitimate subscription to some apps?***
+
+- **Absolutely.** Just don't add the hosts (skip the whole section). Everything else will work flawlessly, the disabling of services / registry editing has no effect on the Adobe apps, pirated or legitimately obtained.
+
+- If you wish to use the Creative Cloud file storage, **keep the Adobe Creative Cloud App installed**, but don't open it (if you do, and some apps lose activation, just repatch - its an easy fix). Disable it from running on startup.
+
+#### ***Should I use AMTEmu (the activator built into CCMaker) over other tools such as Universal Adobe Patcher?***
+
+- AMTEmu **patches and completely strips away** the DRM from the Adobe application it cracks, meanwhile Universal Adobe Patcher **only patches it**. This translates into a performance boost as there is no longer any DRM running in the background. 
+
+- **[Here](https://i.imgur.com/mGPUkFV.png)** is a representation of it. The left one (AMT) is benchmarked from a legitimate Adobe application activated with a real license (identical performance to UAP) and the right one is AMTEmu.
+
+#### ***Are these hosts up to date?***
+
+- The text file with the hosts I **[linked](https://pastebin.com/raw/Mpm5Jd6m)** is verified and updated for 2018 courtesy of u/Greywinde **[here](https://www.reddit.com/r/Piracy/comments/8fy5id/adobe_domains_that_need_to_be_blocked_in_hosts/)**.
+
+***
+
+Good luck! Be sure to ask any issues you have by **using the [dedicated support thread](https://www.reddit.com/r/sjain_guides/comments/9b9wg0/dedicated_support_thread_ask_questions_here/)**, and **include this thread's number in your comment (2).**
+---

@@ -1,0 +1,1464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+	<link rel="shortcut icon" href="http://www.dota2.com/favicon.ico">
+    <link href="D2CCG/css.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9">
+	<link href="D2CCG/global.css" rel="stylesheet" type="text/css">
+	<link href="D2CCG/global_english.css" rel="stylesheet" type="text/css">
+	<link href="D2CCG/publicheader.css" rel="stylesheet" type="text/css">
+	<link href="D2CCG/700_shared.css" rel="stylesheet" type="text/css">
+	<link href="D2CCG/700_gameplay.css" rel="stylesheet" type="text/css">
+	<link href="D2CCG/font_goudytrajan.htm" rel="stylesheet" type="text/css">
+	<script type="text/javascript" async="" src="D2CCG/ga.js"></script>
+	<script type="text/javascript" src="D2CCG/jquery-1.js"></script>
+	<script type="text/javascript">$J = jQuery;</script>
+	<script type="text/javascript" src="D2CCG/shared_global.js"></script>
+
+	<title>Dota 2 Collectible Card Game</title>
+    		
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-33822635-2']);
+			_gaq.push(['_setSampleRate', '1']);		_gaq.push(['_setDomainName', 'dota2.com']);
+			_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>    
+
+	<script>
+    $( function () {
+        $( '#BGItems figure img' ).each( function () {
+            var strItemID = $( this ).attr( 'data-id' );
+            $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/items/' + strItemID + '_lg.png' );
+        });
+        $( '#BGHeroes figure img' ).each( function () {
+            var strHeroID = $( this ).attr( 'data-id' );
+            $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/heroes/' + strHeroID + '_full.png' );
+        });
+    });
+    </script>
+</head>
+
+<body>
+    
+    <div class="Container BGRepeater">
+    	<div class="SubContainer" id="BGGameplay">
+        <h2 class="OrangeBoxHeader">Dota 2 Collectible Card Game</h2>For readability purposes ONLY
+        <em><del>Disclaimer in footer, all assets and artwork belong to Valve. No ads or anything on this page.</del></em>
+
+     <div class="Inner" id="GeneralChanges">
+       <h2 class="OrangeBoxHeader">About Dota 2 Collectible Card Game</h2>
+                
+<figure>
+		<h1>Dota 2 CCG or Docard 2</h1>
+		<ul>
+			<li>A free collectible card game based on the Dota 2 Universe</li>
+			<li>Same ruleset as Hearthstone</li>
+			<li>Uses Unreal Engine 4</li>
+			<li>Community based feedback</li><br>
+		</ul>
+
+		<h1>Features</h1>
+		<ul>
+			<li>Play to Win</li>
+			<li>Radiant vs Dire</li>
+			<li>All 113 heroes available</li>
+			<li>Offline Singleplayer</li>
+			<li>Multiplayer(LAN or Internet)</li>
+			<li>Easy to use deck builder</li><br>
+		</ul>
+		
+		<h1>To do</h1>
+		<ul>
+			<s><li>Dota 2 heroes stats</li></s>
+			<s><li>Revamp Card design</li></s>
+			<li>Menu and settings</li>
+			<li>Dota 2 heroes abilities</li>
+			<li>Dota 2 items</li>
+			<li>Battleground design</li>
+		</ul>
+</figure>
+            </div>
+        </div>
+
+<!--Code below is disabled as items are not in yet-->        
+
+<!--
+        <div class="SubContainer" id="BGItems">
+            <div class="Inner" id="ItemChanges">
+                <h2 class="OrangeBoxHeader">No items yet (Ignore below)</h2>
+
+<figure>
+	    <img data-id="bfury" src="D2CCG/bfury_lg.png">
+	    <h1>Battle Fury</h1>
+	    <ul>
+            <li>Battle Fury Radius from 280 to <font color="green">300</font></li>
+            <li>Battle Fury Distance from 520 to <font color="green">570</font></li>
+		</ul>
+</figure>
+
+<figure>
+	    <img data-id="blade_mail" src="D2CCG/blade_mail_lg.png">
+	    <h1>Blademail:</h1>
+	    <ul>
+            <li>Blademail damage return no longer spell lifesteals off of returned damage</li>
+		</ul>
+</figure>
+
+<figure>
+	    <img data-id="bloodthorn" src="D2CCG/bloodthorn_lg.png">
+	    <h1>Bloodthorn</h1>
+	    <ul>
+            <li>Bloodthorn cooldown from 11 to <font color="red">13</font></li>
+		</ul>
+</figure>
+
+<figure>
+	    <img data-id="dragon_lance" src="D2CCG/dragon_lance_lg.png">
+	    <h1>Dragon Lance:</h1>
+	    <ul>
+            <li>Dragon Lance agility from 14 to <font color="red">13</font></li>
+		</ul>
+</figure>
+
+
+<figure>
+	    <img data-id="heavens_halberd" src="D2CCG/heavens_halberd_lg.png">
+	    <h1>Heaven's Halberd:</h1>
+	    <ul>
+            <li>Heaven's Halberd maim chance from 24% to <font color="green">35%</font></li>
+            <li>Heaven's Halberd cooldown from 30 to <font color="green">22</font></li>
+		</ul>
+</figure>
+
+<figure>
+	    <img data-id="helm_of_the_dominator" src="D2CCG/helm_of_the_dominator_lg.png">
+	    <ul>
+            <li>Helm of the Dominator All Stats from 6 to <font color="red">4</font></li>
+            <li>Helm of the Dominator creeps now give a constant 125 gold bounty</li>
+ 		</ul>
+</figure>
+
+<figure>
+	    <img data-id="sange" src="D2CCG/sange_lg.png">
+	    <h1>Sange</h1>
+	    <ul>
+            <li>Sange maim chance from 24% to <font color="green">30%</font></li>
+		</ul>
+</figure>
+
+<figure>
+	    <img data-id="sange_and_yasha" src="D2CCG/sange_and_yasha_lg.png">
+	    <h1>Sange and Yasha:</h1>
+	    <ul>
+            <li>Sange and Yasha Greater Maim chance from 30% to <font color="green">35%</font></li>
+		</ul>
+</figure>
+
+	
+<figure>
+	    <img data-id="silver_edge" src="D2CCG/silver_edge_lg.png">
+	    <h1>Silver Edge</h1>
+	    <ul>
+            <li>Shadow Walk damage for Silver Edge from 225 to <font color="red">200</font></li>
+		</ul>
+</figure>
+
+<figure>
+	    <img data-id="solar_crest" src="D2CCG/solar_crest_lg.png">
+	    <h1>Solar Crest:</h1>
+	    <ul>
+            <li>Solar Crest Armor from 10 to <font color="green">12 </font>(same for transferring to Ally/Enemy)</li>
+		</ul>
+</figure>
+
+<figure>
+	    <img data-id="tome_of_knowledge" src="D2CCG/tome_of_knowledge_lg.png">
+	    <h1>Tome of Knowledge:</h1>
+	    <ul>
+            <li>Tome of Knowledge additional XP per used Tome from 100 to <font color="green">135</font></li>
+		</ul>
+</figure>
+
+            </div>
+        </div>
+-->
+
+        <div class="SubContainer" id="BGHeroes">
+            <div class="Inner" id="HeroChanges">
+                <h2 class="OrangeBoxHeader">Heroes</h2>
+
+     <figure>
+		<img data-id="abaddon" src="D2CCG/abaddon_full.png">
+		<h1>Abaddon:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+			</ul>
+	</figure>
+
+	<figure>
+		<img data-id="alchemist" src="D2CCG/alchemist_full.png">
+		<h1>Alchemist:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 8</li>
+			<li><font color="blue">Mana</font>: 7</li>
+			<li><font color="white">Ability</font>: Restore full health at end of turn</li>
+			</ul>
+	</figure>
+
+	<figure>
+		<img data-id="ancient_apparition" src="D2CCG/ancient_apparition_full.png">
+		<h1>Ancient Apparition:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="antimage" src="D2CCG/antimage_full.png">
+		<h1>Anti-Mage:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="arc_warden" src="D2CCG/arc_warden_full.png">
+		<h1>Arc Warden:</h1>
+		<ul>
+			<li><font color="red">Health</font>: -</li> 
+			<li><font color="green">Damage</font>: -</li>
+			<li><font color="blue">Mana</font>: -</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+			</ul>
+	</figure>
+
+	<figure>
+		<img data-id="axe" src="D2CCG/axe_full.png">
+		<h1>Axe:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 12</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 8</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="bane" src="D2CCG/bane_full.png">
+		<h1>Bane:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 8</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="batrider" src="D2CCG/batrider_full.png">
+		<h1>Batrider:</h1>
+		<ul>
+		<li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 2</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="beastmaster" src="D2CCG/beastmaster_full.png">
+		<h1>Beastmaster:</h1>
+		<ul>
+		 	<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="bloodseeker" src="D2CCG/bloodseeker_full.png">
+		<h1>Bloodseeker:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 1</li>
+			<li><font color="blue">Mana</font>: 1</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="bounty_hunter" src="D2CCG/bounty_hunter_full.png">
+		<h1>Bounty Hunter:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="brewmaster" src="D2CCG/brewmaster_full.png">
+		<h1>Brewmaster:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 1</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="bristleback" src="D2CCG/bristleback_full.png">
+		<h1>Bristleback:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 7</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="broodmother" src="D2CCG/broodmother_full.png">
+		<h1>Broodmother:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="centaur" src="D2CCG/centaur_full.png">
+		<h1>Centaur Warrunner:</h1>
+		<ul>
+        	<li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="chaos_knight" src="D2CCG/chaos_knight_full.png">
+		<h1>Chaos Knight:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="chen" src="D2CCG/chen_full.png">
+		<h1>Chen:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="clinkz" src="D2CCG/clinkz_full.png">
+		<h1>Clinkz:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="rattletrap" src="D2CCG/rattletrap_full.png">
+		<h1>Clockwerk:</h1>
+		<ul>
+           	<li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 2</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="crystal_maiden" src="D2CCG/crystal_maiden_full.png">
+		<h1>Crystal Maiden:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 2</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="dark_seer" src="D2CCG/dark_seer_full.png">
+		<h1>Dark Seer:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 9</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="dazzle" src="D2CCG/dazzle_full.png">
+		<h1>Dazzle:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="death_prophet" src="D2CCG/death_prophet_full.png">
+		<h1>Death Prophet:</h1>
+		<ul>
+        	<li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="disruptor" src="D2CCG/disruptor_full.png">
+		<h1>Disruptor:</h1>
+		<ul>
+           	<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="doom_bringer" src="D2CCG/doom_bringer_full.png">
+		<h1>Doom:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="dragon_knight" src="D2CCG/dragon_knight_full.png">
+		<h1>Dragon Knight:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="drow_ranger" src="D2CCG/drow_ranger_full.png">
+		<h1>Drow Ranger:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 6</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="earth_spirit" src="D2CCG/earth_spirit_full.png">
+		<h1>Earth Spirit:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 2</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+
+	</figure>
+
+	<figure>
+		<img data-id="earthshaker" src="D2CCG/earthshaker_full.png">
+		<h1>Earthshaker:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 1</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li></ul>
+	</figure>
+
+	<figure>
+		<img data-id="elder_titan" src="D2CCG/elder_titan_full.png">
+		<h1>Elder Titan:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+			</ul>
+	</figure>
+
+	<figure>
+		<img data-id="ember_spirit" src="D2CCG/ember_spirit_full.png">
+		<h1>Ember Spirit:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="enchantress" src="D2CCG/enchantress_full.png">
+		<h1>Enchantress:</h1>
+		<ul>
+           	<li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="enigma" src="D2CCG/enigma_full.png">
+		<h1>Enigma:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 7</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="faceless_void" src="D2CCG/faceless_void_full.png">
+		<h1>Faceless Void:</h1>
+		<ul>
+           	<li><font color="red">Health</font>: 1</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="gyrocopter" src="D2CCG/gyrocopter_full.png">
+		<h1>Gyrocopter:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="huskar" src="D2CCG/huskar_full.png">
+		<h1>Huskar:</h1>
+		<ul>
+           <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="invoker" src="D2CCG/invoker_full.png">
+		<h1>Invoker:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="wisp" src="D2CCG/wisp_full.png">
+		<h1>Io:</h1>
+		<ul>
+          	<li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 0</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="jakiro" src="D2CCG/jakiro_full.png">
+		<h1>Jakiro:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>                
+
+	<figure>
+		<img data-id="juggernaut" src="D2CCG/juggernaut_full.png">
+		<h1>Juggernaut:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="keeper_of_the_light" src="D2CCG/keeper_of_the_light_full.png">
+		<h1>Keeper of the Light:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="kunkka" src="D2CCG/kunkka_full.png">
+		<h1>Kunkka:</h1>
+		<ul>
+           	<li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="legion_commander" src="D2CCG/legion_commander_full.png">
+		<h1>Legion Commander:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>	
+	</figure>
+
+	<figure>
+		<img data-id="leshrac" src="D2CCG/leshrac_full.png">
+		<h1>Leshrac:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="lich" src="D2CCG/lich_full.png">
+		<h1>Lich:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="life_stealer" src="D2CCG/life_stealer_full.png">
+		<h1>Lifestealer:</h1>
+		<ul>
+          	<li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="lina" src="D2CCG/lina_full.png">
+		<h1>Lina:</h1>
+		<ul>
+         	<li><font color="red">Health</font>: 12</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 10</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="lion" src="D2CCG/lion_full.png">
+		<h1>Lion:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="lone_druid" src="D2CCG/lone_druid_full.png">
+		<h1>Lone Druid:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="luna" src="D2CCG/luna_full.png">
+		<h1>Luna:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure><img data-id="lycan" src="D2CCG/lycan_full.png">
+		<h1>Lycan:</h1>
+		<ul>
+			<li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="magnataur" src="D2CCG/magnataur_full.png">
+		<h1>Magnus:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="medusa" src="D2CCG/medusa_full.png">
+		<h1>Medusa:</h1>
+		<ul>
+    		<li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 6</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="meepo" src="D2CCG/meepo_full.png">
+		<h1>Meepo:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 9</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="mirana" src="D2CCG/mirana_full.png">
+		<h1>Mirana:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="monkey_king" src="D2CCG/monkey_king_full.png">
+		<h1>Monkey King</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="morphling" src="D2CCG/morphling_full.png">
+		<h1>Morphling:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 7</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="naga_siren" src="D2CCG/naga_siren_full.png">
+		<h1>Naga Siren:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+		
+	</figure>
+
+	<figure>
+		<img data-id="furion" src="D2CCG/furion_full.png">
+		<h1>Nature's Prophet:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="necrolyte" src="D2CCG/necrolyte_full.png">
+		<h1>Necrophos:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="night_stalker" src="D2CCG/night_stalker_full.png">
+		<h1>Night Stalker:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="nyx_assassin" src="D2CCG/nyx_assassin_full.png">
+		<h1>Nyx Assassin:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 2</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="ogre_magi" src="D2CCG/ogre_magi_full.png">
+		<h1>Ogre Magi:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 7</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="omniknight" src="D2CCG/omniknight_full.png">
+		<h1>Omniknight:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 1</li>
+			<li><font color="blue">Mana</font>: 2</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+		
+	</figure>
+
+	<figure>
+		<img data-id="oracle" src="D2CCG/oracle_full.png">
+		<h1>Oracle:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+
+	<figure>
+		<img data-id="obsidian_destroyer" src="D2CCG/obsidian_destroyer_full.png">
+		<h1>Outworld Devourer:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="phantom_assassin" src="D2CCG/phantom_assassin_full.png">
+		<h1>Phantom Assassin:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 8</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</li>
+		</ul>
+		
+	</figure>
+
+	<figure>
+		<img data-id="phantom_lancer" src="D2CCG/phantom_lancer_full.png">
+		<h1>Phantom Lancer:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+		
+	</figure>
+
+	<figure>
+		<img data-id="phoenix" src="D2CCG/phoenix_full.png">
+		<h1>Phoenix:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+		
+	</figure>
+
+	<figure>
+		<img data-id="puck" src="D2CCG/puck_full.png">
+		<h1>Puck:</h1>
+		<ul>
+           	<li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="pudge" src="D2CCG/pudge_full.png">
+		<h1>Pudge:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 1</li>
+			<li><font color="blue">Mana</font>: 7</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="pugna" src="D2CCG/pugna_full.png">
+		<h1>Pugna:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 7</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="queenofpain" src="D2CCG/queenofpain_full.png">
+		<h1>Queen of Pain:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="razor" src="D2CCG/razor_full.png">
+		<h1>Razor:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="riki" src="D2CCG/riki_full.png">
+		<h1>Riki:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 1</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="rubick" src="D2CCG/rubick_full.png">
+		<h1>Rubick:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 2</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="sand_king" src="D2CCG/sand_king_full.png">
+		<h1>Sand King:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="shadow_demon" src="D2CCG/shadow_demon_full.png">
+		<h1>Shadow Demon:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="nevermore" src="D2CCG/nevermore_full.png">
+		<h1>Shadow Fiend:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 1</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+		
+	</figure>
+
+	<figure>
+		<img data-id="shadow_shaman" src="D2CCG/shadow_shaman_full.png">
+		<h1>Shadow Shaman:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 7</li> 
+			<li><font color="green">Damage</font>: 6</li>
+			<li><font color="blue">Mana</font>: 9</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+		
+	</figure>
+
+	<figure>
+		<img data-id="silencer" src="D2CCG/silencer_full.png">
+		<h1>Silencer:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 1</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="skywrath_mage" src="D2CCG/skywrath_mage_full.png">
+		<h1>Skywrath Mage:</h1>
+		<ul>
+           	<li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="slardar" src="D2CCG/slardar_full.png">
+		<h1>Slardar:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="slark" src="D2CCG/slark_full.png">
+		<h1>Slark:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="sniper" src="D2CCG/sniper_full.png">
+		<h1>Sniper:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+		
+	</figure>
+
+	<figure>
+		<img data-id="spectre" src="D2CCG/spectre_full.png">
+		<h1>Spectre:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 6</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="spirit_breaker" src="D2CCG/spirit_breaker_full.png">
+		<h1>Spirit Breaker:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="storm_spirit" src="D2CCG/storm_spirit_full.png">
+		<h1>Storm Spirit:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="sven" src="D2CCG/sven_full.png">
+		<h1>Sven:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="techies" src="D2CCG/techies_full.png">
+		<h1>Techies:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="templar_assassin" src="D2CCG/templar_assassin_full.png">
+		<h1>Templar Assassin:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 3</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="terrorblade" src="D2CCG/terrorblade_full.png">
+		<h1>Terrorblade:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 1</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="tidehunter" src="D2CCG/tidehunter_full.png">
+		<h1>Tidehunter:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 6</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="shredder" src="D2CCG/shredder_full.png">
+		<h1>Timbersaw:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="tinker" src="D2CCG/tinker_full.png">
+		<h1>Tinker:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 1</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="tiny" src="D2CCG/tiny_full.png">
+		<h1>Tiny:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 1</li> 
+			<li><font color="green">Damage</font>: 0</li>
+			<li><font color="blue">Mana</font>: 1</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="treant" src="D2CCG/treant_full.png">
+		<h1>Treant Protector:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 0</li>
+			<li><font color="blue">Mana</font>: 2</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="troll_warlord" src="D2CCG/troll_warlord_full.png">
+		<h1>Troll Warlord:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 1</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="tusk" src="D2CCG/tusk_full.png">
+		<h1>Tusk:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 0</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="abyssal_underlord" src="D2CCG/abyssal_underlord_full.png">
+		<h1>Underlord:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="undying" src="D2CCG/undying_full.png">
+		<h1>Undying:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="ursa" src="D2CCG/ursa_full.png">
+		<h1>Ursa:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 12</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 10</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="vengefulspirit" src="D2CCG/vengefulspirit_full.png">
+		<h1>Vengeful Spirit:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="venomancer" src="D2CCG/venomancer_full.png">
+		<h1>Venomancer:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="viper" src="D2CCG/viper_full.png">
+		<h1>Viper:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 3</li>
+			<li><font color="blue">Mana</font>: 3</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	
+	</figure>
+
+	<figure>
+		<img data-id="visage" src="D2CCG/visage_full.png">
+		<h1>Visage:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 2</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 8</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="warlock" src="D2CCG/warlock_full.png">
+		<h1>Warlock:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 10</li> 
+			<li><font color="green">Damage</font>: 0</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="weaver" src="D2CCG/weaver_full.png">
+		<h1>Weaver:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="windrunner" src="D2CCG/windrunner_full.png">
+		<h1>Windranger:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 5</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="winter_wyvern" src="D2CCG/winter_wyvern_full.png">
+		<h1>Winter Wyvern:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="witch_doctor" src="D2CCG/witch_doctor_full.png">
+		<h1>Witch Doctor:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 6</li> 
+			<li><font color="green">Damage</font>: 2</li>
+			<li><font color="blue">Mana</font>: 4</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="skeleton_king" src="D2CCG/skeleton_king_full.png">
+		<h1>Wraith King:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 5</li> 
+			<li><font color="green">Damage</font>: 6</li>
+			<li><font color="blue">Mana</font>: 8</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+	<figure>
+		<img data-id="zuus" src="D2CCG/zuus_full.png">
+		<h1>Zeus:</h1>
+		<ul>
+            <li><font color="red">Health</font>: 4</li> 
+			<li><font color="green">Damage</font>: 4</li>
+			<li><font color="blue">Mana</font>: 5</li>
+			<li><font color="white">Ability</font>: Restore health upon attacked</li>
+		</ul>
+	</figure>
+
+             
+            </div>
+        </div>
+    </div>
+
+    <div class="Container" id="Footer"><br>
+      <font color="white">  <div class="Inner">DISCLAIMER: This was made
+ for readability purposes ONLY - all assets belong to and are hosted by 
+Valve. There are no ads on this page and it's a direct copy-paste edit 
+of the <a href="http://www.dota2.com/700">7.00 HTML</a>. Please don't sue me GABEN! Thanks Github for free hosting!
+              </div></font>
+    </div>
+
+
+
+</body></html>
